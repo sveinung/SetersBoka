@@ -1,2 +1,7 @@
-define(['jquery', 'underscore', 'backbone'], function($, _, Backbone) {
+define(['jquery', 'views/loginModalView'], function($, LoginModalView) {
+
+  var loginModalView = new LoginModalView({
+    el: $('#login-view')
+  });
+
 });

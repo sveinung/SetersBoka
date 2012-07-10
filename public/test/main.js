@@ -1,4 +1,5 @@
 require.config({
+  baseUrl: '../scripts/',
   paths: {
     'backbone': '../scripts/libs/backbone/backbone-min',
     'jquery': '../scripts/libs/jquery/jquery.min',
@@ -19,7 +20,7 @@ require.config({
 });
 
 define(function(require) {
-  require('./spec/app.spec');
+  require('./spec/views.spec.js');
   jasmine.getEnv().addReporter(
     new jasmine.HtmlReporter()
   );
