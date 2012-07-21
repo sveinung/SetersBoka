@@ -1,5 +1,5 @@
 require.config({
-  paths: {
+/*  paths: {
     'text': 'libs/require/text',
     'mustache': 'libs/mustache/mustache',
     'backbone': 'libs/backbone/backbone-min',
@@ -25,11 +25,11 @@ require.config({
       deps: ['jquery'],
       exports: 'Modal'
     }
-  }
+  }*/
 });
 
 require([
-  'app'
-], function(App) {
+//  'app'
+], function() {
   console.log("App");
 });
