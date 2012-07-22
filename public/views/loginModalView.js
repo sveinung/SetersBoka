@@ -1,11 +1,11 @@
 define([
-/*  'backbone',
+  'backbone',
   'mustache',
   'text!templates/loginModalView.html',
-  'bootstrap-modal'*/
+  'bootstrap-modal'
 ], function(Backbone, Mustache, html) {
 
-/*  var LoginModalView = Backbone.View.extend({
+  var LoginModalView = Backbone.View.extend({
     initialize: function() {
       this.render();
     },
@@ -17,5 +17,5 @@ define([
     }
   });
   
-  return LoginModalView;*/
+  return LoginModalView;
 });

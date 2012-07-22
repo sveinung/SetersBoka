@@ -5,9 +5,20 @@ config["Browser tests"] = {
   rootPath: "public/",
   sources: ["views/**/*.js"],
   tests: ["test/spec/views/loginModalViewTest.js"],
-//  libs: ["scripts/libs/**/*.js", "scripts/require.js", "scripts/main.js"],
-  libs: ["require.js", "main.js"],
-  extensions: [require("buster-amd")]/*,
+  libs: [
+    "require.js",
+    "main.js"
+  ],
+  resources: [
+    "libs/jquery/jquery.min.js",
+    "libs/mustache/mustache.js",
+    "libs/underscore/underscore-min.js",
+    "libs/backbone/backbone-min.js",
+    "libs/bootstrap/js/*.js",
+    "libs/require/text.js",
+    "templates/*.html"
+  ],
+  extensions: [require("buster-amd")],
   "buster-amd": {
     pathMapper: function(path) {
       if (path.match(/\.html$/)) {
@@ -16,5 +27,5 @@ config["Browser tests"] = {
         return path.replace(/^\//, "").replace(/\.js$/, "");
       }
     }
-  }*/
+  }
 };

@@ -1,11 +1,11 @@
 require.config({
-/*  paths: {
+  paths: {
     'text': 'libs/require/text',
     'mustache': 'libs/mustache/mustache',
     'backbone': 'libs/backbone/backbone-min',
     'jquery': 'libs/jquery/jquery.min',
     'underscore': 'libs/underscore/underscore-min',
-    'bootstrap-modal': '../../assets/bootstrap/js/bootstrap-modal'
+    'bootstrap-modal': 'libs/bootstrap/js/bootstrap-modal'
   },
   shim: {
     'mustache': {
@@ -25,11 +25,6 @@ require.config({
       deps: ['jquery'],
       exports: 'Modal'
     }
-  }*/
+  }
 });
 
-require([
-//  'app'
-], function() {
-  console.log("App");
-});
