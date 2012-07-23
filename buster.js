@@ -7,7 +7,7 @@ config["Browser tests"] = {
   tests: ["test/spec/views/loginModalViewTest.js"],
   libs: [
     "require.js",
-    "main.js"
+    "test/main.js"
   ],
   resources: [
     "libs/jquery/jquery.min.js",
@@ -16,7 +16,8 @@ config["Browser tests"] = {
     "libs/backbone/backbone-min.js",
     "libs/bootstrap/js/*.js",
     "libs/require/text.js",
-    "templates/*.html"
+    "templates/*.html",
+    "test/libs/**/*.js"
   ],
   extensions: [require("buster-amd")],
   "buster-amd": {
