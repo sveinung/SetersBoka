@@ -3,8 +3,11 @@ var config = module.exports;
 config["Browser tests"] = {
   environment: "browser",
   rootPath: "public/",
-  sources: ["views/**/*.js"],
-  tests: ["test/spec/views/loginModalViewTest.js"],
+  sources: [
+    "views/**/*.js",
+    "models/**/*.js"
+  ],
+  tests: ["test/spec/views/*.js"],
   libs: [
     "require.js",
     "test/main.js"
