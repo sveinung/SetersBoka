@@ -13,14 +13,14 @@ config["Browser tests"] = {
     "test/main.js"
   ],
   resources: [
-    "libs/jquery/jquery.min.js",
-    "libs/mustache/mustache.js",
-    "libs/underscore/underscore-min.js",
-    "libs/backbone/backbone-min.js",
-    "libs/bootstrap/js/*.js",
-    "libs/require/text.js",
+    "lib/jquery/jquery.min.js",
+    "lib/mustache/mustache.js",
+    "lib/underscore/underscore-min.js",
+    "lib/backbone/backbone-min.js",
+    "lib/bootstrap/js/*.js",
+    "lib/require/text.js",
     "templates/*.html",
-    "test/libs/**/*.js"
+    "test/lib/**/*.js"
   ],
   extensions: [require("buster-amd")],
   "buster-amd": {

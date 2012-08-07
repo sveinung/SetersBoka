@@ -1,13 +1,13 @@
 require.config({
   paths: {
-    'text': 'libs/require/text',
-    'mustache': 'libs/mustache/mustache',
-    'backbone': 'libs/backbone/backbone-min',
-    'jquery': 'libs/jquery/jquery.min',
-    'underscore': 'libs/underscore/underscore-min',
-    'bootstrap-modal': 'libs/bootstrap/js/bootstrap-modal',
-    'sinon': 'test/libs/sinon-1.4.2',
-    'responseFaker': 'test/libs/responseFaker'
+    'text': 'lib/require/text',
+    'mustache': 'lib/mustache/mustache',
+    'backbone': 'lib/backbone/backbone-min',
+    'jquery': 'lib/jquery/jquery.min',
+    'underscore': 'lib/underscore/underscore-min',
+    'bootstrap-modal': 'lib/bootstrap/js/bootstrap-modal',
+    'sinon': 'test/lib/sinon-1.4.2',
+    'responseFaker': 'test/lib/responseFaker'
   },
   shim: {
     'mustache': {
