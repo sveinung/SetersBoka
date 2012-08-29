@@ -1,7 +1,10 @@
 buster.spec.expose();
 
 describe("LoginModalView", function(run) {
-  require(['views/loginModalView'], function(LoginModalView) {
+  require([
+      'views/loginModalView',
+      'responseFaker'
+    ], function(LoginModalView, responseFaker) {
     run(function() {
       var view;
 
@@ -11,8 +14,12 @@ describe("LoginModalView", function(run) {
         });
       });
 
-      it("should be visible after calling show", function() {
-        expect(true).toBe(true);
+      it("should show errorbox if login fails", function() {
+        var options = {
+          statusCode: 400,
+          headers: { "Content-Type": "application/json" }
+        }
+        expect(true).toBeTruthy();
       });
     });
   });
